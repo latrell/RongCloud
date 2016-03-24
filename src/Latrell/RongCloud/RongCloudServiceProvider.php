@@ -35,7 +35,7 @@ class RongCloudServiceProvider extends ServiceProvider
 		$this->mergeConfigFrom(__DIR__ . '/../../config/config.php', 'latrell-rcloud');
 
 		$this->app->singleton('rcloud', function ($app) {
-			$config = $app->config->get('rcloud');
+			$config = $app->config->get('latrell-rcloud');
 			return new RongCloud($config);
 		});
 	}
