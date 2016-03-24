@@ -1,0 +1,9 @@
+/vendor
+/node_modules
+.env
+worker.log
+nohup.out
+deployment.properties
+/.settings
+/.buildpath
+/.project
