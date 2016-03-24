@@ -42,6 +42,6 @@ class RongCloud
 			throw new RongCloudException($message);
 		}
 
-		return $ret;
+		return json_decode($ret, true);
 	}
 }
