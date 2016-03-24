@@ -13,6 +13,6 @@ class RongCloud extends Facade
 	 */
 	protected static function getFacadeAccessor()
 	{
-		return 'rongcloud';
+		return 'rcloud';
 	}
 }
