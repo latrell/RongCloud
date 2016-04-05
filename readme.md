@@ -1,9 +1,9 @@
 RongCloud
 ======
 
-融云服务端SDK在Laravel的封装包。
+融云服务端SDK在 Laravel 5 的封装包。
 
-该拓展包想要达到在Laravel5框架下，便捷使用融云服务端SDK的目的。
+该拓展包想要达到在 Laravel 5 框架下，便捷使用融云服务端SDK的目的。
 
 ## 安装
 
@@ -17,7 +17,6 @@ composer require latrell/rongcloud dev-master
 ## 使用
 
 要使用融云服务端SDK服务提供者，你必须自己注册服务提供者到Laravel服务提供者列表中。
-基本上有两种方法可以做到这一点。
 
 找到 `config/app.php` 配置文件中，key为 `providers` 的数组，在数组中添加服务提供者。
 
