@@ -45,7 +45,7 @@ class RongCloud
 		$ret = json_decode($ret, true);
 
 		if ($ret['code'] !== 200) {
-			throw new RongCloudException(sprintf('%s : %s', $ret['url'], $ret['errorMessage']), $ret['code']);
+			throw new RongCloudException("{$ret['code']} : {$ret['url']} : {$ret['errorMessage']}", $ret['code']);
 		}
 
 		return $ret;
