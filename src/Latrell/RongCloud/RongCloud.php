@@ -39,7 +39,7 @@ class RongCloud
 		$message = ob_get_clean();
 
 		if ($message !== '') {
-			throw new RongCloudException($message);
+			throw new RongCloudException("{$method} : {$message}");
 		}
 
 		$ret = json_decode($ret, true);
