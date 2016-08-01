@@ -42,12 +42,12 @@ class RongCloud
 			throw new RongCloudException("{$method} : {$message}");
 		}
 
-		$ret = json_decode($ret, true);
+		$json = json_decode($ret, true);
 
-		if ($ret['code'] !== 200) {
-			throw new RongCloudException("{$ret['code']} : {$ret['url']} : {$ret['errorMessage']}", $ret['code']);
+		if (@$json['code'] !== 200) {
+			throw new RongCloudException($ret, @$json['code']);
 		}
 
-		return $ret;
+		return $json;
 	}
 }
