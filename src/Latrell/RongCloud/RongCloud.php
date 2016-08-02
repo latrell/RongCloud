@@ -45,7 +45,7 @@ class RongCloud
 		$json = json_decode($ret, true);
 
 		if (@$json['code'] !== 200) {
-			throw new RongCloudException($ret, @$json['code']);
+			throw new RongCloudException("ret: {$ret} method: {$method} parameters: " . json_encode($parameters), @$json['code']);
 		}
 
 		return $json;
