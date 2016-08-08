@@ -19,5 +19,5 @@
             "Latrell\\RongCloud\\": "src/Latrell/RongCloud/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
