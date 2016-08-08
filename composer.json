@@ -12,7 +12,7 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "5.*",
-        "rongcloud/php-sdk": "^1.0"
+        "rongcloud/php-sdk": "dev-master"
     },
     "autoload": {
         "psr-4": {
