@@ -18,6 +18,5 @@
         "psr-4": {
             "Latrell\\RongCloud\\": "src/Latrell/RongCloud/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
